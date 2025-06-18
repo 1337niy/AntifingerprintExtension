@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/popup.css" />
+  </head>
+  <body>
+    <header class="d-flex justify-content-center align-items-center">
+      <span style="font-size: 20px; font-weight: bold"
+        >Browser Toolkit 1337</span
+      >
+    </header>
+    <div
+      class="d-flex justify-content-center align-content-center flex-column"
+      style="padding: 5px 0"
+    >
+      <div class="d-flex justify-content-center">
+        <button id="spoofNav" class="btn btn-sm" type="button"></button>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button id="spoofWebGL" class="btn btn-sm" type="button"></button>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button id="spoofHeaders" class="btn btn-sm" type="button"></button>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button id="blockJS" class="btn btn-sm" type="button"></button>
+      </div>
+    </div>
+    <div
+      id="spinner"
+      class="d-flex justify-content-center align-items-center d-none"
+    >
+      <div id="overlay"></div>
+      <div class="spinner-border text-danger position-absolute"></div>
+    </div>
+    <script src="js/headerSpoof.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

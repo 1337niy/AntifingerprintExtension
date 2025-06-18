@@ -1,0 +1,32 @@
+{
+  "name": "Browser Toolkit 1337",
+  "description": "Образовательное расширение для демонстрации модификации браузерных API",
+  "version": "1.337",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "permissions": [
+    "storage",
+    "scripting",
+    "contentSettings",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["js/navigatorSpoofScript.js", "js/webglSpoofScript.js"],
+      "matches": ["<all_urls>"],
+      "use_dynamic_url": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "./images/icon16.png",
+      "32": "./images/icon16.png",
+      "48": "./images/icon48.png",
+      "128": "./images/icon128.png"
+    }
+  }
+}
