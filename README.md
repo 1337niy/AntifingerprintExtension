@@ -1,0 +1,2 @@
+# AntifingerprintExtension
+Antifingerprint Chrome Extension
